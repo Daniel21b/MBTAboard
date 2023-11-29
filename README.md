@@ -94,5 +94,3 @@ Acknowledgments
 
 arduino
 
-
-This README provides a clear structure, guiding any potential contributors or users through the setup, usage, and contribution process. You can customize it further to match the specific details and requirements of your project.
