@@ -1,4 +1,3 @@
-Certainly! Below is a README template for your MBTA destination board project, structured to provide a comprehensive overview of the project, how to set it up, and other relevant information. This README assumes a typical structure for a Svelte and Django/Flask project and is written in Markdown for GitHub.
 
 markdown
 
