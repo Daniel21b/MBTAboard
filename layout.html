@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Train Destination Board</title>
+    <script src="mbtaDestinationBoard.js" defer></script>
+</head>
+<body>
+    <div class="destination-board">
+        <table id="mbta-board">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Destination</th>
+                    <th>Train No.</th>
+                    <th>Track No.</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="board-content">
+                <!-- Table rows will be dynamically added here by the JavaScript code -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+      // Ensure the DOM is fully loaded before running our script
+      document.addEventListener('DOMContentLoaded', function() {
+        const apiBase = 'https://api-v3.mbta.com';
+        const stopId = 'place-north'; // Replace with your specific stop ID
+        const mbtaBoard = new MBTADestinationBoard(apiBase, stopId);
+        mbtaBoard.startPolling();
+      });
+    </script>
+</body>
+</html>
